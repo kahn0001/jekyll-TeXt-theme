@@ -59,17 +59,18 @@ layout: base
 	</div>
 </div>
 
-<div id="gitmentContainer"></div>
+<div id="container"></div>
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
 var gitment = new Gitment({
-    owner: 'kahn0001',
-    repo: 'kahn0001.github.io',
-    oauth: {
-        client_id: 'f46705ab537f00e53181',
-        client_secret: '56a88fcd33b31f250777f85f7ea0248678d93546',
-    },
-});
-gitment.render('gitmentContainer');
+  id: 'location.href', // 可选。默认为 location.href
+  owner: 'kahn0001',
+  repo: 'kahn0001.github.io',
+  oauth: {
+    client_id: 'f46705ab537f00e53181',
+    client_secret: '56a88fcd33b31f250777f85f7ea0248678d93546',
+  },
+})
+gitment.render('container')
 </script>
